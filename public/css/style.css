@@ -1,0 +1,88 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: #B3C8CF;
+}
+
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #4C585B;
+    text-align: center;
+    padding: 20px;
+}
+
+h1{
+
+    font-size: 2rem;  /* Tamaño de fuente */
+    color: #4C585B;  /* Color del texto */
+    font-weight: bold;  /* Negrita el texto */
+    text-align: center;  /* Centrar el texto */
+    margin-bottom: 20px;  /* Margen inferior */
+  
+}
+h2 {
+    font-size: 1.8rem;  /* Tamaño de fuente */
+    color: #4C585B;  /* Color del texto */
+    font-style: italic;  /* Hacer el texto en cursiva */
+    text-align: center;  /* Centrar el texto */
+    margin-top: 20px;  /* Margen superior */
+  }
+  
+  /* Aumentar tamaño del botón */
+.btn.custom-btn {
+    font-size: 1.2rem; /* Aumentar el tamaño de la fuente */
+    padding: 10px 15px; /* Aumentar el padding para que el botón sea más grande */
+    border-radius: 8px; /* Redondear los bordes */
+    float: right;
+    text-transform: uppercase; /* Hacer que el texto esté en mayúsculas */
+}
+
+/* Puedes agregar un hover para cambiar el color cuando el usuario pase el cursor */
+.btn.custom-btn:hover {
+    background-color: #28a745; /* Un color verde más oscuro */
+    border-color: #28a745;
+}
+
+
+
+#btn-products {
+    
+    font-size: 1.2rem; /* Aumentar el tamaño de la fuente */
+    padding: 10px 15px; /* Aumentar el padding para que el botón sea más grande */
+    border-radius: 8px; /* Redondear los bordes */
+    float: right;
+    
+    text-transform: uppercase; /* Hacer que el texto esté en mayúsculas */
+}
+
+#btn-products:hover {
+    background-color: #28a745; /* Un color verde más oscuro */
+    border-color: #28a745;
+}
+
+#login-btn {
+    display: block;  /* Hace que el botón se comporte como un bloque */
+    margin-left: auto;  /* Empuja el botón hacia la derecha */
+    margin-right: auto;  /* Empuja el botón hacia la izquierda, centrándolo */
+  }
+  
+#login-user {
+    font-size: 1rem;
+
+}
+#login-user:hover{
+    color: #4C585B;
+}
+  
+footer {
+    margin-top: auto; /* Esto asegura que el footer se empuje hacia abajo */
+}

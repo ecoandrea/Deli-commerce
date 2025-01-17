@@ -1,0 +1,54 @@
+<section>
+    <h2>Registrate</h2>
+
+<form action="/api/v1/usuario" method="POST"> {{!--!en action dice donde se va a dirigir, va con metodo--}}
+    {{!--esto es la forma basica para que formulario se comunique con controllador --}}
+       <div class="formulario-container" id="contacto">
+        <div class="container">
+            
+
+            <div id="formulario">
+                <input class="form-control mb-2" name="nombre" placeholder="Ingrese su nombre" autocomplete="off"
+                    id="nombre" type="text" required />
+
+                <p class="text-danger mb-2 d-none" id="alertName"></p>
+
+                 <input class="form-control mb-2" name="apellido_paterno" placeholder="Ingrese su apellido paterno" id="apellido_paterno"
+                    autocomplete="off" type="text"  required/>
+
+                <input class="form-control mb-2" name="apellido_materno" placeholder="Ingrese su apellido materno" id="apellido_materno"
+                    autocomplete="off" type="text"  required/>
+
+                <input class="form-control mb-2" name="email" placeholder="Ingrese su correo" id="email"
+                    autocomplete="off" type="email"  required/>
+
+                <p class="text-danger mb-2 d-none" id="alertEmail"></p>
+                
+                <input class="form-control mb-2" name="telefono" placeholder="Ingrese su telefono" id="telefono"
+                    autocomplete="off" type="tel"  required/>
+                <div class="form-group">
+
+                <input class="form-control mb-2" name="password" placeholder="Ingrese una contraseña" id="password"
+                    autocomplete="off" type="password"  required/>
+
+               
+
+                 <input class="form-control mb-2" name="fecha_nacimiento" placeholder="Ingrese su fecha de nacimiento" id="fecha_nacimiento"
+                    autocomplete="off" type="date"  required/>    
+
+<!--
+                    <label for="textarea1"></label>
+                    <textarea class="form-control" id="textarea1" rows="3" placeholder="Escriba su comentario o pregunta" required></textarea>
+                </div>
+-->
+                
+
+            <button class="btn btn-success custom-btn m-4" type="submit">Enviar</button>
+
+            
+            <div class="alert alert- mt-2 d-none" id="alertSuccess"></div>
+        </div>
+        </form>
+    </section>
+
+

@@ -1,0 +1,30 @@
+
+[
+{
+    
+    "nombre": "Alejandro",
+    "apellido_paterno": "Beristein",
+    "apellido_materno": "Araya",
+    "email": "alejbe@gmail.com",
+    "telefono": "+56989013876",
+    "password": "AleBe@30",
+    "admin": true,
+    "fecha_nacimiento": "2000-02-02"
+},
+
+
+{
+  
+    "nombre": "Cafe grano Oma 200 gr.",
+    "descripcion": "Grano de origen colombiano, cultivado en las sierras nevadas, otorgandole la acidez perfecta.",
+    "precio": 20000,
+    "stock": 25
+  },
+
+  {
+  
+    "usuarioId": "16c89d2a-4872-4b38-ba34-3dedc1b09e9b",
+    "productoId": "4203c1c6-f4f2-487e-a7ce-3ee7a6369d83"
+   
+  }
+]

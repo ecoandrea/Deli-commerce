@@ -1,0 +1,20 @@
+{{> header
+    nombre="Productos de Primera"
+}}
+
+<section class="producto-list">
+    <h2>Listado de Nuestros Productos</h2>
+ 
+   <div class="container mt-4">
+  <div class="row d-flex justify-content-center gap-3 p-4">
+        
+        {{#each productos}}   {{!--aqui recorremos con el operador each--}}
+            {{> card    
+                nombre=this.nombre
+                descripcion=this.descripcion
+                precio=this.precio
+                stock=this.stock
+            }}
+        {{/each}} {{!--no olvidar cerrarlo--}}
+    </div>
+</section>

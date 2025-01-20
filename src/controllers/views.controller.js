@@ -1,5 +1,5 @@
 import { Producto } from "../models/Producto.model.js"
-
+import { Usuario } from "../models/Usuario.model.js"
 
 export const renderHomePage = (req, res, next) => {
     res.render('pages/home')
@@ -39,4 +39,18 @@ export const renderLogin = (req, res) => {
 
 export const renderRegisterSuccess = (req, res) => {
     res.render('usuarios/successRegister')
+}
+
+export const renderTable = async (req, res, next) => {
+    try {
+        const usuarios = await Usuario.findAll({
+            attributes: ["id", "nombre", "apellido_paterno", "email"],
+            raw: true//para cuando findAll tenga muchos datos que filtrar
+        });
+
+        res.render('usuarios/userTable', { usuarios }) //userTable viene de carpeta ususarios -- userTable.hbs
+        
+    } catch (error) {
+    next(error);
+    }
 }

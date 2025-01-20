@@ -1,13 +1,13 @@
 <section>
-    <h2>Registrate</h2>
-
-<form action="/api/v1/usuario" method="POST"> {{!--!en action dice donde se va a dirigir, va con metodo--}}
+    <h2 class="p-2">Registrate</h2>
+ <div class="d-flex justify-content-center align-items-center vh-0">
+<form action="/api/v1/usuario" method="POST" class="w-50" > {{!--!en action dice donde se va a dirigir, va con metodo--}}
     {{!--esto es la forma basica para que formulario se comunique con controllador --}}
-       <div class="formulario-container" id="contacto">
+       <div class="formulario-container" id="contacto" >
         <div class="container">
             
 
-            <div id="formulario">
+            <div id="formulario" >
                 <input class="form-control mb-2" name="nombre" placeholder="Ingrese su nombre" autocomplete="off"
                     id="nombre" type="text" required />
 
@@ -49,6 +49,7 @@
             <div class="alert alert- mt-2 d-none" id="alertSuccess"></div>
         </div>
         </form>
+        </div>
     </section>
 
 

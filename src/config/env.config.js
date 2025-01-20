@@ -4,7 +4,7 @@ dotenv.config();
 
 export const config = {
     port: process.env.PORT || 3000,
-    secretKey: process.env.SECRET_KEY ||'defaultAecretKey',
+    secretKey: process.env.SECRET_KEY ||'defaultSecretKey',
 
     db: {
         name: process.env.DB_NAME || 'database',
@@ -17,5 +17,4 @@ export const config = {
 };
 
 //genero objeto con todas las variables de entorno
-//llamado se hace una sola vez y se guarda en memoria de archivo de config, ya no hay que volver a llamarlo, escribirlo .solo  leerlo , ahorrandose eso
-//de 3 me ahorro 2
+

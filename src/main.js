@@ -9,7 +9,8 @@ import { serverInit } from './services/ServerInit.js';
 //rutas
 import UsuarioRouter from './routes/usuario.routes.js'
 import ProductoRouter from './routes/producto.routes.js'
-import viewsRouter from './routes/views.routes.js'//ruta handlebars
+import AuthRouter from './routes/auth.routes.js' 
+import viewsRouter from './routes/views.routes.js'
 
 
 import { errorHandler } from './middlewares/errorHandlers.js';
@@ -39,6 +40,7 @@ app.set('view engine', '.hbs');
 
 app.use('/api/v1', UsuarioRouter);
 app.use('/api/v1', ProductoRouter);
+app.use('/api/v1', AuthRouter);
 app.use('', viewsRouter) //la de handlebars
 
 app.use(errorHandler);

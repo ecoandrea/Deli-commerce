@@ -1,6 +1,6 @@
 
 
-SELECT * FROM usuario;
+SELECT * FROM usuarios;
 
 SELECT * FROM productos;
 
